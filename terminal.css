@@ -1,0 +1,68 @@
+/* Add this CSS code to your main.css or the CSS file you are using */
+
+/* Terminal Styles */
+#terminal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  #terminal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+  }
+  
+  input[type="password"]::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Link Styles */
+  a {
+    color: #fff; /* Set the default link color */
+    text-decoration: underline; /* Add underline to links */
+    text-align: center;
+  }
+  
+  a:hover {
+    color: #00ff00; /* Change the link color on hover */
+    text-decoration: none; /* Remove underline on hover */
+  }
+  
+  /* Additional Styling */
+  body {
+    background-color: #222;
+    color: #fff;
+    font-family: "Courier New", monospace;
+  }
+  
+#logo{
+    text-align: center;
+}

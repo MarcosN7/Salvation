@@ -5,8 +5,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="terminal.css" />
+  <script src="terminal.js"></script>
+
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-  
 </head>
 <body class="index is-preload">
   <div id="page-wrapper">
@@ -20,6 +21,7 @@
       <h2>Enter Password</h2>
       <div id="terminal">
         <input type="password" id="password-input" placeholder="Password" />
+        <button id="submit-button">Submit</button>
       </div>
     </section>
 
@@ -37,36 +39,5 @@
       </ul>
     </footer>
   </div>
-
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.dropotron.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      var passwordInput = document.getElementById("password-input");
-
-      passwordInput.addEventListener("keydown", function(event) {
-        if (event.keyCode === 13) {
-          event.preventDefault();
-          var password = passwordInput.value;
-
-          // Validate password and perform appropriate action
-          if (password === "123") {
-            // Correct password, perform action (e.g., redirect to another page)
-            window.location.href = "success.html";
-          } else {
-            // Incorrect password, display error message or take appropriate action
-            alert("Incorrect password. Please try again.");
-          }
-        }
-      });
-    });
-  </script>
 </body>
 </html>
